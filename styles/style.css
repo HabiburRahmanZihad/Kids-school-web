@@ -15,8 +15,144 @@
     display: flex;
 }
 
+header{
+    max-width: 1440px;
+    margin: 0 auto;
+}
+/* Text color */
+.orange{
+    color: rgb(254, 163, 1);
+}
 
+.skyblue{
+    color: rgb(1, 172, 253);
+}
+.violet{
+    color: rgb(93, 88, 239);
+}
 
+.skyblue-2{
+    color: rgb(5, 212, 223);
+}
+
+.none-one{
+    display: none;
+}
+
+/* Navbar styles */
 .navbar{
-    justify-content: space-around;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav-brand-name img{
+    height: 62px;
+    width: 100%;
+}
+
+.nav-brand-name{
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+}
+
+.brand{
+    font-size: 32px;
+    font-weight: 700;
+}
+.nav-links{
+    gap: 32px;
+    align-items: center;
+}
+.nav-item{
+    list-style: none;
+    font-size: 1.7rem;
+    font-weight: 500;
+}
+
+.nav-btn{
+    font-family: Quicksand;
+    width: 197px;
+    height: 60px;
+    padding: 10px;
+    color: rgb(255, 255, 255);
+    border: none;
+    font-size:1.7rem;
+    font-weight: 600;
+    border-radius: 12px;
+    background: rgb(254, 163, 1);
+}
+
+
+/* Banner section style */
+.banner-container{
+    align-items: center;
+    justify-content: space-between;
+
+}
+
+.banner-content{
+    text-align: left;
+    max-width: 640px;
+
+}
+
+.banner-title{
+    font-size: 4.7rem;
+    font-weight: 700;
+}
+.banner-subtitle{
+    font-size: 1.7rem;
+    font-weight: 400;
+}
+
+.banner-btn{
+    border-radius: 12px;
+    background: rgb(17, 17, 17);
+    color: rgb(255, 255, 255);
+    font-family: Quicksand;
+    font-size: 20px;
+    font-weight: 700;
+    padding: 10px;
+    width: 197px;
+    border: none;
+}
+
+.banner-img img{
+    width: 100%;
+}
+
+
+
+.fa-solid{
+    font-size: 2.10rem;
+}
+
+
+/* responsive media query */
+
+@media screen and (max-width: 576px){
+   .navbar{
+    padding: 15px;
+    }
+
+    .nav-line{
+        border: 0.5px solid rgb(254, 163, 1);
+    }
+
+    #none{
+    display: none;
+    }
+
+    .none-one{
+        display: block;
+    }
+
+    .banner-container{
+        flex-direction: column-reverse;
+    }
+    
+    .banner-content{
+        text-align: center;
+    }
 }
