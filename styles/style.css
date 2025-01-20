@@ -9,6 +9,11 @@
   font-style: normal;
 }
 
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
 
 /* shared styles */
 .display-flex{
@@ -18,7 +23,9 @@
 header{
     max-width: 1440px;
     margin: 0 auto;
+    margin-top: 50px;
 }
+
 /* Text color */
 .orange{
     color: rgb(254, 163, 1);
@@ -45,11 +52,6 @@ header{
     align-items: center;
 }
 
-.nav-brand-name img{
-    height: 62px;
-    width: 100%;
-}
-
 .nav-brand-name{
     justify-content: center;
     align-items: center;
@@ -57,7 +59,7 @@ header{
 }
 
 .brand{
-    font-size: 32px;
+    font-size: 2.6rem;
     font-weight: 700;
 }
 .nav-links{
@@ -94,16 +96,18 @@ header{
 .banner-content{
     text-align: left;
     max-width: 640px;
-
 }
 
 .banner-title{
     font-size: 4.7rem;
     font-weight: 700;
+    margin-bottom: 25px;
 }
+
 .banner-subtitle{
     font-size: 1.7rem;
     font-weight: 400;
+    margin-bottom: 25px;
 }
 
 .banner-btn{
@@ -122,16 +126,130 @@ header{
     width: 100%;
 }
 
-
-
-.fa-solid{
+.fa-bars{
     font-size: 2.10rem;
 }
 
 
+/* Standard Curriculum section style */
+.stan-container{
+    background-image: url(../assets/bg.png);
+    background-size: cover;
+    background-repeat: repeat;
+    background-position: center;
+    padding: 80px 0; 
+}
+
+.primary-title{
+    font-size: 4rem;
+    font-weight: 700;
+    text-align: center;
+    margin-bottom: 80px;
+}
+
+.stan-card-container{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    max-width: 1440px;
+    margin: 0 auto;
+    justify-items: center;
+    gap: 30px;
+    margin-bottom: 80px;
+}
+.stan-card-content{
+    text-align: center;
+    padding: 58px 40px;
+    max-height: 481px;
+}
+
+.stan-card-content img{
+    max-width: 132px;
+}
+
+.stan-card-content h4{
+    font-size: 2rem;
+    font-weight: 700;
+    margin-top: 40px;
+    margin-bottom: 30px;
+}
+
+.stan-card-content p{
+    font-size: 1.5rem;
+    font-weight: 500;
+    color: rgb(128, 128, 128);
+    margin-bottom: 40px;
+}
+
+.stan-btn{
+    font-size: 1.2rem;
+    font-family: quicksand;
+    font-weight: 700;
+    border: none;
+    background-color: white;
+}
+
+
+.stan-card-content-1{
+    box-sizing: border-box;
+    border: 0.94px solid rgb(222, 245, 255);
+    border-radius: 18.86px;
+    box-shadow: inset 0px 0px 28.3px 0.94px rgba(0, 0, 0, 0.05);
+    background: linear-gradient(180.00deg, rgb(222, 245, 255),rgba(255, 255, 255, 0) 40%),rgb(255, 255, 255);
+}
+
+.stan-card-content-2{
+    box-sizing: border-box;
+    border: 0.94px solid rgb(255, 244, 220);
+    border-radius: 18.86px;
+    box-shadow: inset 0px 0px 28.3px 0.94px rgba(0, 0, 0, 0.05);
+    background: linear-gradient(180.00deg, rgb(255, 244, 220),rgba(255, 255, 255, 0) 40%),rgb(255, 255, 255);
+}
+
+.stan-card-content-3{
+    box-sizing: border-box;
+    border: 0.94px solid rgb(242, 232, 255);
+    border-radius: 18.86px;
+    box-shadow: inset 0px 0px 28.3px 0.94px rgba(0, 0, 0, 0.05);
+    background: linear-gradient(180.00deg, rgb(238, 225, 255),rgba(255, 255, 255, 0) 40%),rgb(255, 255, 255);
+}
+
+.ball{
+    gap: 10px;
+    text-align: center;
+    font-size: 24px;
+    font-weight: 900;
+    justify-content: center;
+}
+.fa-arrow-right, .fa-arrow-left{
+    padding: 15px;
+}
+
+.circle-1, .circle-2{
+    width: 60px;
+    height: 60px;
+    position: relative;
+    border-radius: 30px;
+    background: rgb(254, 163, 1);
+    color: rgb(255, 255, 255);
+}
+
+/* Our Stories section style */
+
+.stories-container{
+    background-image: url(../assets/bg.png);
+    background-size: cover;
+    background-repeat: repeat;
+    background-position: center;
+    padding: 80px 0; 
+
+}
 /* responsive media query */
 
 @media screen and (max-width: 576px){
+    header{
+        margin-top: 1px;
+    }
+
    .navbar{
     padding: 15px;
     }
@@ -151,8 +269,18 @@ header{
     .banner-container{
         flex-direction: column-reverse;
     }
-    
+
     .banner-content{
         text-align: center;
+    }
+
+    .stan-card-container{
+        grid-template-columns: repeat(1, 1fr);
+        max-width: 90%;
+    }
+
+    .stan-title{
+        font-size: 3rem;
+        margin-bottom: 30px;
     }
 }
