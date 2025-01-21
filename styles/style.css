@@ -161,7 +161,7 @@ header{
 .stan-card-content{
     text-align: center;
     padding: 58px 40px;
-    max-height: 481px;
+    height: 481px;
 }
 
 .stan-card-content img{
@@ -363,10 +363,10 @@ header{
     margin: 0 auto;
 }
 .footer-content-1{
-    width: 420px;
+    max-width: 420px;
 }
 .footer-content-1 img{
-    width: 30%;
+    width: 67px;
 }
 .footer h2{
     color: rgb(255, 255, 255);
@@ -382,7 +382,7 @@ header{
 }
 .logo{
     align-items: center;
-    gap: 25px;
+    gap: 10px;
 }
 
 .footer h3{
@@ -484,9 +484,9 @@ header{
 
     .footer-container{
         flex-direction: column;
-        height: 100%;
         justify-content: left;
         gap: 20px;
         padding-left: 10px;
+        padding-right: 10px;
     }
 }
