@@ -95,17 +95,17 @@ header{
 
 .banner-content{
     text-align: left;
-    max-width: 640px;
+    max-width: 620px;
 }
 
 .banner-title{
-    font-size: 4.7rem;
+    font-size: 4.5rem;
     font-weight: 700;
     margin-bottom: 25px;
 }
 
 .banner-subtitle{
-    font-size: 1.7rem;
+    font-size: 1.5rem;
     font-weight: 400;
     margin-bottom: 25px;
 }
@@ -350,10 +350,21 @@ header{
 }
 
 
+/*  footer section  */
 
+.footer{
+    background: rgb(1, 172, 253);
+    color: rgb(255, 255, 255);
+    /* padding: 80px 0; */
+    height: 480px;
+}
+.footer-container{
+    display: flex;
+    justify-content: space-between;
+    max-width: 1440px;
+    margin: 0 auto;
 
-
-
+}
 
 
 
@@ -418,10 +429,13 @@ header{
         margin: 0 auto;
     }
     .stories-card-two{
-        height: 250px;
+        height: 280px;
         max-width: 90%;
     }
-    
+    #card-btn{
+        font-size: 1.25rem;
+        padding: 5px;
+    }
 
     .card-btn{
         margin-top: -115px;
