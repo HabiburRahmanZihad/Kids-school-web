@@ -135,9 +135,11 @@ header{
 .stan-container{
     background-image: url(../assets/bg.png);
     background-size: cover;
-    background-repeat: repeat;
+    background-repeat: no-repeat;
     background-position: center;
-    padding: 80px 0; 
+    padding: 80px 0;
+    max-width: 1440px;
+    margin: 0 auto; 
 }
 
 .primary-title{
@@ -235,14 +237,127 @@ header{
 
 /* Our Stories section style */
 
-.stories-container{
-    background-image: url(../assets/bg.png);
+.stories-container {
+    background: url(../assets/bg.png),linear-gradient(0.00deg, rgba(254, 163, 1, 0.3),rgba(255, 255, 255, 0.3) 100%);
     background-size: cover;
-    background-repeat: repeat;
+    background-repeat: no-repeat;
     background-position: center;
-    padding: 80px 0; 
+    padding: 100px 0;
+}
+
+.stories-card-container{
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    max-width: 1440px;
+    margin: 0 auto; 
 
 }
+.stories-card-one{
+    border-radius: 16px;
+    background: rgb(255, 255, 255);
+    max-width: 600px;
+}
+
+.text-content{
+    padding: 40px;
+}
+
+.stories-card-one img{
+    width: 100%;
+    max-height: 340px;
+    border-radius: 16px 16px 0 0;
+}
+
+.card-title-one{
+    font-size: 2rem;
+    font-weight: 700;
+    margin: 20px 0;
+    max-width: 450px;
+}
+
+.card-subtitle-one{
+    font-size: 1.25rem;
+    font-weight: 500;
+    color: rgb(102, 102, 102);
+    margin-top: 20px;
+}
+   
+
+#card-btn{
+    font-family: 'Raleway', sans-serif;
+    color: rgb(255, 255, 255);
+    font-size: 1.25rem;
+    font-weight: 500;
+    padding: 17px;
+    border-radius: 47.93px;
+    background: rgb(93, 88, 240);
+    border: none;
+    height: 50px;
+}
+.card-btn{
+    margin-top: -85px;
+    margin-left: 40px;
+}
+.card-btn-1{
+    margin-top: -270px;
+    margin-left: 40px;
+}
+
+.card-all{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+}
+
+.stories-card-two{
+    border-radius: 16px;
+    background: rgb(255, 255, 255);
+    border: none;
+    width: 400px;
+    height: 280px;
+}
+
+.stories-card-two img{
+    width: 100%;
+    height: 190px;
+    border-radius: 16px 16px 0 0;
+}
+
+.card-all-title{
+    /* padding: 38px; */
+    margin-top: 38px;
+    text-align: center;
+    font-size: 1.25rem;
+    font-weight: 700;
+    color: rgb(0, 0, 0);
+}
+.stories-btn-container{
+    display: flex;
+    justify-content: center;
+    margin-top: 80px;
+}
+
+.stories-btn{
+    color: rgb(255, 255, 255);
+    font-family: Quicksand;
+    font-size: 2rem;
+    font-weight: 700;
+    border: none;
+    border-radius: 20px;
+    background: rgb(17, 17, 17);
+    padding: 10px;
+    width: 197px;
+}
+
+
+
+
+
+
+
+
+
 /* responsive media query */
 
 @media screen and (max-width: 576px){
@@ -280,7 +395,40 @@ header{
     }
 
     .stan-title{
-        font-size: 3rem;
         margin-bottom: 30px;
+    }
+    .stan-container{
+
+
+        padding-bottom: 0px;
+    }
+    .stories-container {
+        padding: 20px 0px;
+    }
+
+    .card-all{
+        grid-template-columns: repeat(2, 1fr);
+        gap: 10px;
+        margin: 0 auto;
+    }
+
+    .stories-card-two{
+        height: auto;
+        width: 95%;
+        margin: 0 auto;
+    }
+    .stories-card-two{
+        height: 320px;
+        max-width: 95%;
+    }
+    
+
+    .card-btn{
+        margin-top: -115px;
+        margin-left: 20px;
+    }
+
+    .stories-btn-container{
+        margin-top: 40px;
     }
 }
